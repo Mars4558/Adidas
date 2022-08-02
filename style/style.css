@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    /* задаёт максимальную ширину элемента. больше чем это значение он не будет */
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Rubic';
+}
+
+/* HEADER */
+
+
+
+/* NAV */
+.nav {
+    background: #ffffff;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    margin-right: 30px;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: inline-block;
+    color: #000000;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    padding-top: 31px;
+    padding-bottom: 26px;
+    transition: 0.5s;
+    /* задаёт плавность анимации */
+}
+
+/* :hover - псевдокласс для наведении */
+.nav-link:hover {
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+
+}
+
+/* FORM */
+
+.nav-form {
+    display: flex;
+}
+
+.form-search {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px 0px 0px 10px;
+    width: 216px;
+    height: 30px;
+    outline: none;
+    padding: 8px 12px;
+    line-height: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    max-width: 216px;
+    width: 100%;
+}
+
+.form-search::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.form-btn {
+    background: #000000;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    width: 74px;
+    height: 30px;
+    padding: 0 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+
+}
+
+
+/* Header content */
+.header-content {
+    background: url('../images/header-bg.png') no-repeat top / cover;
+    height: 100vh;
+    /* vh- view-height виимая высота экранна */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 59px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.header-description {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    /* делает все буквы заглавными */
+    color: #FFFFFF;
+}
+
+/* MAIN */
+
+/* MAIN CARDS */
+.cards {
+    display: flex;
+}
+
+.card {
+    background: #181D28;
+    width: 25%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #6B4B6B;
+}
+
+.card-title {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+/* MAIN GEAR */
+.gear {
+    margin: 40px 0;
+}
+
+.gear-title {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gear-description {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+
+}
+
+.gear-description:nth-of-type(1) {
+    margin-bottom: 18px;
+}
+
+.gear-img {
+    width: 100%;
+}
+
+/* MAIN_categories */
+
+.categories-title {
+    text-align: center;
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.categories {
+    margin-bottom: 40px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 35px;
+    background: #181D28;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-link {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
